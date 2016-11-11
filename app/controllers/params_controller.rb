@@ -21,4 +21,22 @@ class ParamsController < ApplicationController
     end
   end
 
+  def url_params
+    @message = params[:message]
+    @second_message = params[:second_message]
+  end
+
+  def url_guess
+    @answer = 36
+    @guess_number = params[:guess].to_i
+    if @answer > @guess_number
+      @response = "Guess higher!"
+    elsif
+      @answer < @guess_number
+      @response = "Guess lower!"
+    else
+      @response = "You guessed correct!"
+    end
+  end
+
 end
