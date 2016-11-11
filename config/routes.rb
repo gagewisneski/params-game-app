@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "/", to: "params#home"
 
+  get "/guessing_game", to: "params#guess"
+
 end
