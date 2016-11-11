@@ -1,7 +1,7 @@
 class ParamsController < ApplicationController
 
-  def params
-    @name = params[:name]
+  def home
+    @message = params[:message]
   end
 
 end
