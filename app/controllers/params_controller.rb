@@ -12,12 +12,12 @@ class ParamsController < ApplicationController
     @answer = 36
     @guess_number = params[:guess].to_i
     if @answer > @guess_number
-      @response1 = "Guess higher!"
+      @response = "Guess higher!"
     elsif
       @answer < @guess_number
-      @response2 = "Guess lower!"
+      @response = "Guess lower!"
     else
-      @response3 = "You guessed correct!"
+      @response = "You guessed correct!"
     end
   end
 
